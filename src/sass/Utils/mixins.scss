@@ -1,0 +1,56 @@
+/* (LOGEMENT) -> CONTENT */
+
+@mixin content-style($size) {
+
+    font-size: $size;
+    font-weight: 500;
+    // line-height: 51.34px;
+    color: $primary-color;
+
+}
+
+/* (LOGEMENT) -> DROPDOWN */
+
+@mixin dropdown-rotate {
+    transition: transform .2s ease-in-out;
+    transform: rotate(-90deg);
+}
+
+@mixin dropdown-show($height) {
+    max-height: $height;
+    padding: 25px 20px; 
+    transition: max-height .25s ease-out, padding .2s ease-out;
+}
+
+@mixin dropdown-title{
+    margin-top: 0;
+    background-color: $primary-color;
+
+    width: 100%;
+    font-size: 18px; 
+    font-weight: 500;
+    line-height: 25.67px;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & img{
+        transition: transform .2s ease-in-out;
+    }
+}
+
+@mixin dropdown-info {
+    padding: 0px 20px; 
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.67px;
+    color: $primary-color;
+    height: 301px;
+    background-color: #f7f7f7;
+    transition: max-height .25s ease-out, padding .2s ease-out;
+    z-index: -1;
+    max-height: 0;
+    overflow: hidden;
+}

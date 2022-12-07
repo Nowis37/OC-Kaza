@@ -1,0 +1,62 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    &__banner{
+        & img{
+            width: 10%;
+            max-width: 1240px;
+            height: 223px;
+            border-radius: 25px;
+            object-fit: cover;
+        }
+        
+    }
+    &__informations{
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        gap: 35px;
+        &__card{
+            width: 100%;
+            max-width: 1023px;
+            min-width: 300px;
+            & .rotate {
+                @include dropdown-rotate;
+            }
+            & .show {
+                @include dropdown-show(200px);
+            }
+            &__title{
+                @include dropdown-title;
+            }
+            &__info{
+                @include dropdown-info;
+            }
+            &__equipment{
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) { 
+
+    .about{
+        &__informations{
+            gap: 18px;
+            &__card{
+                &__title{
+                    padding: 7px 15px;
+                    font-size: 15px;
+                }
+                &__info{
+                    font-size: 13px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+}

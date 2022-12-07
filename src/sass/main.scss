@@ -1,0 +1,14 @@
+@import "./Utils/mixins.scss";
+@import "./Utils/variables.scss";
+
+@import "./Base/normalized";
+
+@import "../components/Banner/banner.scss";
+@import "../components/Logement/logementList.scss";
+
+@import "../layout/Header/header.scss";
+@import "../layout/Footer/footer.scss";
+
+@import "../layout/Error/404.scss";
+@import "../components/About/about.scss";
+@import "../pages/Logement/logement.scss";
