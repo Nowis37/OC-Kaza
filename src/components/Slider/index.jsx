@@ -23,7 +23,7 @@ const Slider = ({ slides }) => {
         // picture = lien de l'image | index = N° de l'image
         return (
           <div key={index} className={ 
-            index === current ? "slide slider__active-picture" : "slide slider__inactive-picture" }>
+            index === current ? "slide active" : "slide inactive" }>
             
             {index === current && (
               <img src={picture} alt="" className="slider__picture" />

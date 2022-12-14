@@ -8,7 +8,7 @@ import Host from "../../components/Host";
 import Slider from "../../components/Slider";
 import Tags from "../../components/Tags";
 import Collapse from "../../components/Collapse";
-import Error from '../../layout/Error'
+import Error from '../Error'
 
 const Logement = () => {
 

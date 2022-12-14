@@ -11,7 +11,7 @@ function LocationList() {
 	}
 
 	return (
-		<div className='logement'>
+		<main className='logement'>
 			<div className='logement__list'>
 				{logementList.map(({ id, cover, title }) =>
 					<article className='logement__list__content'>
@@ -23,7 +23,7 @@ function LocationList() {
 					</article>
 				)}
 			</div>
-		</div>
+		</main>
 	)
 }
 

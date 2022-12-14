@@ -1,11 +1,11 @@
 import React from "react";
-import Collapse from "../Collapse";
+import Collapse from "../../components/Collapse";
 
 import bannerImg from "../../assets/image-banner-about.png";
 
 const About = () => {
   return (
-    <div className="about">
+    <main className="about">
         <div className="about__banner">
             <img src={ bannerImg } alt="Paysages de montagne parcemer de neige"/>
         </div>
@@ -15,7 +15,7 @@ const About = () => {
             <Collapse categorie="about" title="Service" content="Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question." />
             <Collapse categorie="about" title="Sécurité" content="La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes." />
         </div>
-    </div>
+    </main>
   );
 };
 

@@ -1,5 +1,5 @@
 import Banner from '../../components/Banner';
-import LocationList from '../../components/Logement/LocationList.jsx';
+import LocationList from '../../components/Logement';
 
 function App() {
   return (
