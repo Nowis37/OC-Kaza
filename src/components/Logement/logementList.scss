@@ -1,7 +1,7 @@
 .logement{
     width: 100%;
     max-width: 1240px;
-    min-width: 270px;
+    min-width: 250px;
     height: 100%;
     border-radius: 25px;
     margin: auto;
@@ -21,6 +21,8 @@
             position: relative;
             &__bg{
                 position: absolute;
+                // bottom: 0;
+                // border: 2px solid blue;
                 width: 100%;
                 height: 100%;
                 background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
@@ -43,28 +45,44 @@
         }
     }
 }
+
+@media (max-width: 425px) { 
+    .logement{
+        background-color: transparent;
+        &__list{
+            padding: 0px;
+            row-gap: 20px;
+            &__content{
+                &__bg{
+                    height: 98%;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) { 
     .logement{
         &__list{
             &__content{
                 width: 100%;
                 min-width: 240px;
-                max-width: 100%;
+                max-width: 700px;
                 height: 100%;
-                min-height: 255px;
-                max-height: 100%;
+                min-height: 100px;
+                max-height: 500px;
+                & img{
+                    // height: fit-content;
+                    // width: fit-content;
+                    object-fit: cover;
+                }
+                // &__cover{
+                //     object-fit: cover;
+                // }
+                // &__bg{
+                //     height: 99%;
+                // }
             }
-        }
-    }
-}
-
-
-@media (max-width: 425px) { 
-    .logement{
-        background-color: transparent;
-        &__list{
-            padding: 12px;
-            row-gap: 20px;
         }
     }
 }
