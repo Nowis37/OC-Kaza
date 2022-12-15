@@ -26,7 +26,11 @@ const Slider = ({ slides }) => {
             index === current ? "slide active" : "slide inactive" }>
             
             {index === current && (
-              <img src={picture} alt="" className="slider__picture" />
+              <>
+                <img src={picture} alt="" className="slider__picture" />
+                <p className="slider__count">{current + 1}/{length}</p>
+              </>
+              
             )}
           </div>
         );

@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import * as ReactDOMClient from 'react-dom/client'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './pages/Home'
 import Location from './pages/Logement'
@@ -12,7 +12,9 @@ import Footer from './layout/Footer'
 
 import "./style.css";
 
-ReactDOM.render(
+const root = ReactDOMClient.createRoot(document.getElementById('root'))
+
+root.render(
 	<React.StrictMode>
 		<Router>
 			<Header />
@@ -33,5 +35,4 @@ ReactDOM.render(
 			<Footer />
 		</Router>
 	</React.StrictMode>,
-	document.getElementById('root')
 )

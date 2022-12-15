@@ -346,6 +346,14 @@ body {
   border-radius: 25px;
   object-fit: cover;
 }
+.product .slider__count {
+  position: absolute;
+  left: 48.8%;
+  bottom: 5%;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
 .product .slider__previous, .product .slider__next {
   position: absolute;
   top: 40%;

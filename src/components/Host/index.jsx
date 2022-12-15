@@ -1,15 +1,9 @@
 import React from "react";
-import PropTypes from 'prop-types'
 
 
 const Host = ({ host }) => {
   const isHostSplited = host.name.split(" ");
   const [name, lastname] = isHostSplited;
-
-  Host.propTypes = {
-    name: PropTypes.string.isRequired,
-    lastname: PropTypes.string.isRequired
-  }
 
   return (
     <div className="product__content__right__host">

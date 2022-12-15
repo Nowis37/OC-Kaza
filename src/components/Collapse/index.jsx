@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from 'prop-types'
 
 import arrowDown from "../../assets/arrowDown.svg";
 
@@ -16,12 +15,6 @@ const Collapse = ({ categorie, title, content }) => {
     }
 
   };
-  
-  Collapse.propTypes = {
-	categorie: PropTypes.string.isRequired,
-	title: PropTypes.string.isRequired,
-	content: PropTypes.string.isRequired
-  }
 
   return (
     <div className={`${categorie}__informations__card`}>

@@ -1,5 +1,4 @@
 import { useLocation } from "react-router-dom";
-import PropTypes from 'prop-types'
 
 import products from "../../datas/logement.json";
 
@@ -26,16 +25,6 @@ const Logement = () => {
 
     const { title, location, rating, host, equipments, description, pictures } = product;
 
-    Logement.propTypes = {
-        title: PropTypes.string.isRequired,
-        location: PropTypes.node.isRequired,
-        rating: PropTypes.number.isRequired,
-        host: PropTypes.string.isRequired,
-        equipments: PropTypes.array.isRequired,
-        description: PropTypes.string.isRequired,
-        pictures: PropTypes.node.isRequired
-    }
-    
     return (
         <main className="product">
             <Slider slides={pictures} />
